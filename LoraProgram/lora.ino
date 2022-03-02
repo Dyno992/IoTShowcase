@@ -14,7 +14,7 @@ void setup() {
     Serial.begin(115200);
     while (!Serial);
     Serial.println("Welcome to MKR WAN 1300/1310 first configuration sketch");
-    
+
     if (!modem.begin(EU868)) {
         Serial.println("Failed to start module");
     }
